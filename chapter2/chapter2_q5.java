@@ -6,9 +6,9 @@ public class chapter2_q5 {
    System.out.println(toFriend(p1,p2));
 
   }
-	
-	public static int toFriend(Point p1, Point p2) {
-		return (p1.x-p2.x)*(p1.x-p2.x)+(p1.y-p2.y)*(p1.y-p2.y);
+
+	public static  double toFriend(Point p1, Point p2) {
+		return Math.sqrt(p1.x-p2.x)*(p1.x-p2.x)+(p1.y-p2.y)*(p1.y-p2.y);
 	}
 }
 class Point{
@@ -20,4 +20,5 @@ class Point{
 		this.y=num2;
 	}
 }
+
 
